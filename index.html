@@ -1,38 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Build with Aisha</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Build With Aisha</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!--  HEADER / NAV  -->
+  <header id="header">
+    <div class="logo">Build <span>with Aisha</span></div>
 
-    <!--Navigation bar-->
-    <header class="header">
-        <div class="logo">Build with Aisha</div>
-            <nav class="navbar">
-                <a href="#home">Home</a>
-                <a href="#About">About</a>
-                <a href="#Skills">Skills</a>
-                <a href="#Projects">Projects</a>
-                <a href="#Contact">#Contact</a>
-            </nav>
-            <div class="menu-toggle">&#9766;</div>
-    </header>
-    
-    <!--Hero section-->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Hi! I'm <span>Aisha</span></h1>
-            <p>I build clean, user-focused web applications</p>
-            <div class="buttons">
-                <a href="#projects" class="btn-primary">View my Works</a>
-                <a href="#contact" class="btn-secondary">Contact Me</a>
-            </div>
-        </div>
-    </section>
+    <nav class="navbar">
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
-    <script src="script.js"></script>
+    <!-- Hamburger for mobile -->
+    <div class="menu-toggle">&#9776;</div>
+  </header>
+
+  <!--  HERO SECTION  -->
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <h1>Hi, I'm <span>Aisha Muhammad Idris</span></h1>
+      <p>A passionate web developer building beautiful, functional websites.</p>
+      <a href="#projects" class="btn-primary">View My Work</a>
+      <a href="#contact" class="btn-secondary">Contact Me</a>
+    </div>
+  </section>
+
+  <!--  ABOUT SECTION -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      I'm an aspiring web developer with a background in Economics and software engineering (ALX).
+      I love creating clean, responsive web experiences using HTML, CSS, and JavaScript.
+      I'm continuously learning React and modern tools to craft digital solutions that make an impact.
+      My goal is to contribute to meaningful projects and grow as a developer while delivering value to users.
+    </p>
+  </section>
+
+  <!--  SKILLS SECTION -->
+  <section id="skills" class="skills">
+    <h2>My Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">HTML5</div>
+      <div class="skill-card">CSS3</div>
+      <div class="skill-card">JavaScript</div>
+      <div class="skill-card">Bootstrap</div>
+      <div class="skill-card">Git & GitHub</div>
+      <div class="skill-card">Responsive Design</div>
+    </div>
+  </section>
+
+  <!--  PROJECTS SECTION  -->
+  <section id="projects" class="projects">
+    <h2>Featured Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="assets/images/masjid.png" alt="Masjid website project" />
+        <h3>Masjidu Darul Arqam Website</h3>
+        <p>A community website designed for a local Masjid with member registration and loan request features.</p>
+        <a href="https://masjidu-darul-arqam.netlify.app/" target="_blank" class="btn-primary">View Site</a>
+      </div>
+
+      <div class="project-card">
+        <img src="assets/images/ngo.png" alt="NGO website project" />
+        <h3>Home of Ni'imah Foundation</h3>
+        <p>A non-profit website designed to showcase programs and encourage community support.</p>
+        <a href="https://homeofniimah.netlify.app/" target="_blank" class="btn-primary">View Site</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION  -->
+  <section id="contact" class="contact">
+    <h2>Get In Touch</h2>
+    <p>Have a project idea or want to collaborate? Let's connect!</p>
+
+    <form action="#" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn-primary">Send Message</button>
+    </form>
+
+    <div class="socials">
+      <a href="https://linkedin.com/in/aishaaim" target="_blank">LinkedIn</a> |
+      <a href="#" target="_blank">GitHub</a> |
+      <a href="#" target="_blank">Twitter</a>
+    </div>
+  </section>
+
+  <!--  FOOTER -->
+  <footer id="footer">
+    <p>© 2025 Build With Aisha — Crafted with ❤️ and dedication.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
