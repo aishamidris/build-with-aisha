@@ -106,8 +106,15 @@ header {
   transition: color 0.3s;
 }
 
+.navbar a.active {
+  color: var(--accent);
+  border-bottom: 2px solid var(--accent);
+}
+
+
 .navbar a:hover {
   color: var(--primary);
+  transition: color 0.3s ease;
 }
 
 .menu-toggle {
@@ -146,6 +153,11 @@ header {
   color: var(--text-color);
   margin-top: 15px;
 }
+
+.hero::after {
+  background: rgba(0, 0, 0, 0.45);
+}
+
 
 /* ABOUT SECTION */
 .about {
@@ -290,6 +302,67 @@ header {
   color: var(--accent);
 }
 
+/*  CONTACT FORM STYLING  */
+.contact-form {
+  max-width: 600px;
+  margin: 40px auto;
+  background: var(--card-bg);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 0, 127, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form label {
+  text-align: left;
+  font-weight: 600;
+  color: var(--text-light);
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-light);
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--accent);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.contact-form textarea {
+  resize: none;
+  min-height: 120px;
+}
+
+.contact-form button {
+  background: var(--accent);
+  color: var(--text-light);
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: var(--primary);
+}
+
+
 /* FOOTER */
 footer {
   background: #050912;
@@ -348,5 +421,22 @@ footer a:hover {
   .project-grid {
     grid-template-columns: 1fr;
   }
+
+  .contact-form {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+
+  .contact-form button {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+
 }
 
